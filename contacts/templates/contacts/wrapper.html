@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>IT times</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="/static/mainApp/css/bootstrap.min.css" type="text/css">
+</head>
+<body>
+<div class="jumbotron">
+    <div class="container">
+        <h1 align="center">Welcome to IT times Contacts</h1>
+    </div>
+    <p align="center">
+        <a href="/" class="btn btn-warning btn-lg">Home Page</a>
+        <a href="/news" class="btn btn-danger btn-lg">News </a>
+        <a href="/contacts" class="btn btn-info btn-lg">Contacts &raquo;</a>
+    </p>
+</div>
+<img src="{% static 'contacts/contacts.jpg' %}" class="img-thumbnail" width="100%">
+<div class="jumbotron">
+    <div class="container">
+        <p>
+            You can contact us in many of the most popular social networks
+            as VK, Telegram and so on. We are open to your questions and suggestions 24/7, so just write us
+            whatever and whenever you want.
+            <br/>
+            Our VK Open Community:
+            <a href="https://vk.com/it_times2019" class="btn btn-primary btn-lg">VKontakte</a>
+            <br/>
+            <br/>
+            Our Telegram Open Channel:
+            <a href="https://tele.gg/ITtimes" class="btn btn-info btn-lg">Telegram</a>
+        </p>
+        <hr>
+        &copy; Все права защищены 2019
+    </div>
+</div>
+</body>
+</html>

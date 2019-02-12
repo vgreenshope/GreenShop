@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>IT times</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="/static/mainApp/css/bootstrap.min.css" type="text/css">
+    <style>
+   p {
+    text-indent: 20px; /* Отступ первой строки в пикселах */
+   }
+
+
+
+
+    </style>
+</head>
+<body>
+<div class="jumbotron">
+    <div class="container">
+        <h1 align="center">Welcome to the official site of IT times!</h1>
+        <p align="center">
+            <a href="/" class="btn btn-warning btn-lg">Home Page</a>
+            <a href="/news" class="btn btn-danger btn-lg">News </a>
+            <a href="/contacts" class="btn btn-info btn-lg">Contacts &raquo;</a>
+        </p>
+    </div>
+</div>
+<img src="{% static 'mainApp/coding.jpg' %}" class="img-thumbnail" width="100%">
+<div class="container">
+    <br>
+    <h2 align="left">About us</h2>
+    <div class="jumbotron">
+        <p align="left">
+            IT times is a big developing company of young and middle-aged developers who want to start learning
+            programming
+            and IT or read and investigate in interesting projects like debates and deliberate popular news sorted by
+            date
+            . You can check our last posted news in the <a href="/news" class="info">news</a> tab.
+        </p>
+        <br>
+        <p align="left">
+            If you like listening to interesting music, it is also published after every posts. You can also rate it
+            with a help of
+            VK and Telegram.
+        </p>
+    </div>
+    <hr>
+    &copy; Все права защищены 2019
+</div>
+</body>
+</html>

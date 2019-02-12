@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>IT times</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="/static/mainApp/css/bootstrap.min.css" type="text/css">
+</head>
+<body>
+<div class="jumbotron">
+    <div class="container">
+        <h1 align="center">News</h1>
+        <p align="center">
+            <a href="/" class="btn btn-warning btn-lg">Home Page</a>
+            <a href="/news" class="btn btn-danger btn-lg">News </a>
+            <a href="/contacts" class="btn btn-info btn-lg">Contacts &raquo;</a>
+        </p>
+    </div>
+</div>
+<div class="container">
+    {% block content %}
+        <h1 class="text-warning">{{articles.title}}</h1>
+        <h6 class="text-danger">Published at 10:00 on {{articles.date|date:"d.m.Y"}}</h6>
+        <p>{{articles.post|safe|linebreaks}}</p>
+    {% endblock %}
+    <img src="{% static 'news/news.jpg' %}" class="img-thumbnail">
+</div>
+<div class="jumbotron">
+    <div class="container">
+        <hr>
+        &copy; Все права защищены 2019
+    </div>
+</div>
+</body>
+</html>

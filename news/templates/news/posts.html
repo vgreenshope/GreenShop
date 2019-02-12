@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>IT times</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="/static/mainApp/css/bootstrap.min.css" type="text/css">
+</head>
+<body>
+<div class="jumbotron">
+    <div class="container">
+        <h1 align="center">News</h1>
+        <p align="center">
+            <a href="/" class="btn btn-warning btn-lg">Home Page</a>
+            <a href="/news" class="btn btn-danger btn-lg">News </a>
+            <a href="/contacts" class="btn btn-info btn-lg">Contacts &raquo;</a>
+        </p>
+    </div>
+</div>
+<div class="container">
+    <h3 align="left">What's new for today?</h3><br>
+    {% block content %}
+    {% for post in object_list %}
+    <a href="/news/{{post.id}}"><h3>{{post.title}}</h3></a>
+    <h5>{{post.date|date:"d-m-Y"}}</h5>
+    {% endfor %}
+    {% endblock %}
+</div>
+ <img src="{% static 'news/news.jpg' %}" class="img-thumbnail" width="100%">
+<div class="jumbotron">
+    <div class="container">
+        <hr>
+        &copy; Все права защищены 2019
+    </div>
+</div>
+</body>
+</html>
