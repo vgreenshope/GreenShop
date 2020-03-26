@@ -1,43 +1,60 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewpoint" content="width=device-width, initial scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
-    <title>IT times</title>
+    <title>GreenWay</title>
     {% load staticfiles %}
     <link rel="stylesheet" href="/static/mainApp/css/bootstrap.min.css" type="text/css">
+    <style>
+   p {
+    text-indent: 20px; /* Отступ первой строки в пикселах */
+   }
+.form-wrap {
+  border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+
+.link {
+  color: white;
+}
+
+    </style>
 </head>
 <body>
+<div align="center"><img src="{% static 'mainApp/logo.png' %}" height="380"></div>
+
 <div class="jumbotron">
-    <div class="container">
-        <h1 align="center">Welcome to IT times Contacts</h1>
+
+    <div class="container-fluid bg-success form-wrap">
+
+        <h1 align="center"><font color="white" face="cursive">Наши контактные данные:</font></h1>
+
+        <p align="center"><font color="white" face="cursive" size="5">id 9845973 - Минеева Виктория</font></p>
+        <p align="center"><font color="white" face="cursive" size="5">Россия, Москва</font></p>
+        <p align="center"><font color="white" face="cursive" size="5">What's App и Viber: +7-925-327-05-42</font></p>
+        <p align="center"><font color="white" face="cursive" size="5"><a class="link" href="https://vk.com/vgreenshope">Вконтакте: https://vk.com/vgreenshope</a></font></p>
+        <p align="center"><font color="white" face="cursive" size="5"><b><a class="link" href="https://instagram.com/vgreenshope?r=nametag">Инстаграм: @vgreenshope</a> </b> </font></p>
     </div>
-    <p align="center">
-        <a href="/" class="btn btn-warning btn-lg">Home Page</a>
-        <a href="/news" class="btn btn-danger btn-lg">News </a>
-        <a href="/contacts" class="btn btn-info btn-lg">Contacts &raquo;</a>
+    <div class="container-fluid"><p align="center">
+        <a href="" class="btn btn-success btn-lg">КОНТАКТЫ 📕</a>
+        <a href="/catalog/" class="btn btn-success btn-lg">КАТАЛОГ ТОВАРОВ 📦</a>
+        <a href="/" class="btn btn-success btn-lg">О НАС 😊</a>
     </p>
-</div>
-<img src="{% static 'contacts/contacts.jpg' %}" class="img-thumbnail" width="100%">
-<div class="jumbotron">
-    <div class="container">
-        <p>
-            You can contact us in many of the most popular social networks
-            as VK, Telegram and so on. We are open to your questions and suggestions 24/7, so just write us
-            whatever and whenever you want.
-            <br/>
-            Our VK Open Community:
-            <a href="https://vk.com/it_times2019" class="btn btn-primary btn-lg">VKontakte</a>
-            <br/>
-            <br/>
-            Our Telegram Open Channel:
-            <a href="https://tele.gg/ITtimes" class="btn btn-info btn-lg">Telegram</a>
-        </p>
-        <hr>
-        &copy; Все права защищены 2019
+
+        <br>
+        <br>
+        <br>
     </div>
+
 </div>
 </body>
 </html>

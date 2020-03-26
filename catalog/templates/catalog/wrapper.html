@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>GreenWay</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="/static/mainApp/css/bootstrap.min.css" type="text/css">
+    <style>
+   p {
+    text-indent: 20px; /* Отступ первой строки в пикселах */
+   }
+.form-wrap {
+  border-radius: 50px;
+}
+
+
+
+body{
+ background: #ececec;
+}
+img {
+ height: auto;
+ max-width: 100%;
+}
+.content{
+ margin-top: 50px;
+}
+.product {
+ background: #fff none repeat scroll 0 0;
+ border: 1px solid #c0c0c0;
+ height: 390px;
+ overflow: hidden;
+ padding: 25px 15px;
+ position: relative;
+ text-align: center;
+ transition: all 0.5s ease 0s;
+ margin-bottom: 20px;
+}
+.product:hover {
+ box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+}
+.product-img {
+ height: 200px;
+}
+.product-title a {
+ color: #000;
+ font-weight: 500;
+ text-transform: uppercase;
+}
+.product-desc {
+ max-height: 60px;
+ overflow: hidden;
+}
+.product-price {
+ bottom: 15px;
+ left: 0;
+ position: absolute;
+ width: 100%;
+ color: #d51e08;
+ font-size: 18px;
+ font-weight: 500;
+
+body{
+ background: #ececec;
+}
+img {
+ height: auto;
+ max-width: 100%;
+}
+.content{
+ margin-top: 50px;
+}
+.product {
+ background: #fff none repeat scroll 0 0;
+ border: 1px solid #c0c0c0;
+ height: 390px;
+ overflow: hidden;
+ padding: 25px 15px;
+ position: relative;
+ text-align: center;
+ transition: all 0.5s ease 0s;
+ margin-bottom: 20px;
+}
+.product:hover {
+ box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+}
+.product-img {
+ height: 200px;
+}
+.product-title a {
+ color: #000;
+ font-weight: 500;
+ text-transform: uppercase;
+}
+.product-desc {
+    max-height: 60px;
+    overflow: hidden;
+}
+.product-price {
+ bottom: 15px;
+ left: 0;
+ position: absolute;
+ width: 100%;
+ color: #d51e08;
+ font-size: 18px;
+ font-weight: 500;
+}
+
+
+
+
+
+
+.link {
+  color: white;
+}
+
+    </style>
+</head>
+<body>
+<div align="center"><img src="{% static 'mainApp/logo.png' %}" height="380"></div>
+
+<div class="jumbotron">
+
+ <div class="container-fluid"><p align="center">
+        <a href="/contacts/" class="btn btn-success btn-lg">КОНТАКТЫ 📕</a>
+        <a href="" class="btn btn-success btn-lg">КАТАЛОГ ТОВАРОВ 📦</a>
+        <a href="/" class="btn btn-success btn-lg">О НАС 😊</a>
+    </p>
+
+        <br>
+    </div>
+
+
+<h1 align="center"><font face="cursive">Посмотрите лучшие товары нашего каталога!</font></h1>
+
+<br>
+    <br>
+
+
+<div class="container-fluid bg-success form-wrap">
+      <h2 align="center"><font face="cursive" color="white">1. Изделия из микроволокна</font></h2>
+
+</div>
+    <br>
+<div align="center" >
+ <div class="row">
+ <div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/1.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+      <br>
+ <a href="#">Набор AQUAMAGIC NEGA</a>
+ </p>
+ <p class="product-desc">для ухода за телом</p>
+ <p class="product-price">Цена: 3234₽</p>
+ </div>
+ </div>
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/2.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+      <br>
+ <a href="#">Набор AQUAMAGIC LASKA</a>
+ </p>
+ <p class="product-desc">для ухода за кожей лица, шеи и декольте</p>
+ <p class="product-price">Цена: 4081₽</p>
+ </div>
+ </div>
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/3.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+      <br>
+ <a href="#">Набор AQUAMAGIC UJUT</a>
+ </p>
+ <p class="product-desc">для ухода за домом</p>
+ <p class="product-price">Цена: 2310₽</p>
+ </div>
+ </div>
+
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/4.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+     <br>
+ <a href="#">Набор AQUAMAGIC LUXE</a>
+ </p>
+ <p class="product-desc">для ухода за автомобилем</p>
+ <p class="product-price">Цена: 1848₽</p>
+ </div>
+ </div>
+
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/5.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+     <br>
+ <a href="#">Набор AQUAMAGIC ABSOLUTE</a>
+ </p>
+ <p class="product-desc">для ухода за кухней</p>
+ <p class="product-price">Цена: 2541₽</p>
+ </div>
+ </div>
+
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/6.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+     <br>
+ <a href="#">Набор AQUAMAGIC BABY</a>
+ </p>
+ <p class="product-desc">для купания ребенка</p>
+ <p class="product-price">Цена: 2871₽</p>
+ </div>
+ </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid bg-success form-wrap">
+      <h2 align="center"><font face="cursive" color="white">2. Системы для уборки</font></h2>
+
+</div>
+<br>
+<div align="center" >
+ <div class="row">
+ <div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/21.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+      <br>
+ <a href="#">AQUAMATIC MOP</a>
+ </p>
+ <p class="product-desc">Универсальная швабра с двумя насадками</p>
+ <p class="product-price">Цена: 3927₽</p>
+ </div>
+ </div>
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/22.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+      <br>
+ <a href="#">НАСАДКИ AQUAMATIC MOP</a>
+ </p>
+ <p class="product-desc">Набор насадок для универсальной швабры</p>
+ <p class="product-price">Цена: 2387₽</p>
+ </div>
+ </div>
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/23.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+      <br>
+ <a href="#"> AQUAMATIC TURBO</a>
+ </p>
+ <p class="product-desc">Система с вращающейся шваброй...</p>
+ <p class="product-price">Цена: 5115₽</p>
+ </div>
+ </div>
+
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/24.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+     <br>
+ <a href="#">AQUAMATIC AERO</a>
+ </p>
+ <p class="product-desc">Швабра с распылителем</p>
+ <p class="product-price">Цена: 3080₽</p>
+ </div>
+ </div>
+
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/25.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+     <br>
+ <a href="#">AQUAMATIC CRAB</a>
+ </p>
+ <p class="product-desc">Универсальное устройство-манипулятор</p>
+ <p class="product-price">Цена: 1232₽</p>
+ </div>
+ </div>
+
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/26.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+     <br>
+ <a href="#">Насадка AQUAMAGIC TURBO зеленая</a>
+ </p>
+ <p class="product-desc">для уборки общих помещений</p>
+ <p class="product-price">Цена: 495₽</p>
+ </div>
+ </div>
+
+
+ </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid bg-success form-wrap">
+      <h2 align="center"><font face="cursive" color="white">3. Сухая косметика и кремы. Шампуни и кондиционеры</font></h2>
+
+</div>
+<br>
+<div align="center" >
+ <div class="row">
+ <div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/31.png' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+      <br>
+ <a href="#">SHARME BASIC COLLECTION</a>
+ </p>
+ <p class="product-desc">Коллекция средств для базового ухода за..</p>
+ <p class="product-price">Цена: 2112₽</p>
+ </div>
+ </div>
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/32.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+      <br>
+ <a href="#">SHARME MIRACLE</a>
+ </p>
+ <p class="product-desc">Средство для очищения кожи лица, 35+</p>
+ <p class="product-price">Цена: 655₽</p>
+ </div>
+ </div>
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/33.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+      <br>
+ <a href="#"> SHARME VELVET</a>
+ </p>
+ <p class="product-desc">Обновляющей крем-скраб для тела</p>
+ <p class="product-price">Цена: 655₽</p>
+ </div>
+ </div>
+
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/34.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+     <br>
+ <a href="#">SHARME CHIC</a>
+ </p>
+ <p class="product-desc">Маска-шампунь для волос</p>
+ <p class="product-price">Цена: 732₽</p>
+ </div>
+ </div>
+
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/35.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+     <br>
+ <a href="#">SHEARME PEARL</a>
+ </p>
+ <p class="product-desc">Укрпеляющий зубной порошок</p>
+ <p class="product-price">Цена: 539₽</p>
+ </div>
+ </div>
+
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/36.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+     <br>
+ <a href="#">SHEARME AMULET</a>
+ </p>
+ <p class="product-desc">Питательный крем с солнезащитный эффектом</p>
+ <p class="product-price">Цена: 495₽</p>
+ </div>
+ </div>
+
+
+ </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="container-fluid bg-success form-wrap">
+      <h2 align="center"><font face="cursive" color="white">4. Диетические коктейли</font></h2>
+
+</div>
+<br>
+<div align="center" >
+ <div class="row">
+ <div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/41.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+      <br>
+ <a href="#">AVITALL ACTIVE CHOCOLATE</a>
+ </p>
+ <p class="product-desc">Шоколадный утренний коктейль для...</p>
+ <p class="product-price">Цена: 3080₽</p>
+ </div>
+ </div>
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/42.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+      <br>
+ <a href="#">AVITALL RELAX CHOCOLATE</a>
+ </p>
+ <p class="product-desc">Шоколадный вечерний коктейль для...</p>
+ <p class="product-price">Цена: 3080₽</p>
+ </div>
+ </div>
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/43.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+      <br>
+ <a href="#"> AVITALL ACTIVE COFFEE</a>
+ </p>
+ <p class="product-desc">Кофейный утренний коктейль для...</p>
+ <p class="product-price">Цена: 3080₽</p>
+ </div>
+ </div>
+
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/44.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+     <br>
+ <a href="#">AVITALL RELAX VANILLA</a>
+ </p>
+ <p class="product-desc">ВАнильный вечерний коктейль</p>
+ <p class="product-price">Цена: 3080₽</p>
+ </div>
+ </div>
+ </div>
+</div>
+
+
+
+
+
+
+
+
+ <div class="container-fluid bg-success form-wrap">
+      <h2 align="center"><font face="cursive" color="white">5. Функциональные чаи</font></h2>
+
+</div>
+<br>
+<div align="center" >
+ <div class="row">
+ <div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/51.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+      <br>
+ <a href="#">TEAVITALL FRESH</a>
+ </p>
+ <p class="product-desc">Чайный напиток очищающий</p>
+ <p class="product-price">Цена: 539₽</p>
+ </div>
+ </div>
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/52.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+      <br>
+ <a href="#">TEAVITALL PRETTY</a>
+ </p>
+ <p class="product-desc">Чайный напиток для женского...</p>
+ <p class="product-price">Цена: 539₽</p>
+ </div>
+ </div>
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/53.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+      <br>
+ <a href="#"> TEAVITALL PREMIER</a>
+ </p>
+ <p class="product-desc">Чайный напиток для мужского...</p>
+ <p class="product-price">Цена: 539₽</p>
+ </div>
+ </div>
+
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/54.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+     <br>
+ <a href="#">TEAVITALL BRAVO</a>
+ </p>
+ <p class="product-desc">Чайный напиток тонизирующий</p>
+ <p class="product-price">Цена: 539₽</p>
+ </div>
+ </div>
+
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/55.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+     <br>
+ <a href="#">TEAVITALL BANQUET</a>
+ </p>
+ <p class="product-desc">Чайный напиток для пищеварения</p>
+ <p class="product-price">Цена: 539₽</p>
+ </div>
+ </div>
+
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/56.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+     <br>
+ <a href="#">TEAVITALL EXPRESS BREEZE</a>
+ </p>
+ <p class="product-desc">Чайный напиток антиоксидантный...</p>
+ <p class="product-price">Цена:  385₽</p>
+ </div>
+ </div>
+
+
+ </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="container-fluid bg-success form-wrap">
+      <h2 align="center"><font face="cursive" color="white">6. Чистящие средства</font></h2>
+
+</div>
+<br>
+<div align="center" >
+ <div class="row">
+ <div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/61.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+      <br>
+ <a href="#">BIOTRIM BLANC</a>
+ </p>
+ <p class="product-desc">Пластины для стирки универсальные</p>
+ <p class="product-price">Цена: 660₽</p>
+ </div>
+ </div>
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/62.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+      <br>
+ <a href="#">BIOTRIM VERONA</a>
+ </p>
+ <p class="product-desc">Пластины для стирки женского белья</p>
+ <p class="product-price">Цена: 660₽</p>
+ </div>
+ </div>
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/63.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+      <br>
+ <a href="#"> BIOTRIM NANNY</a>
+ </p>
+ <p class="product-desc">Пластины для стрирки детского белья</p>
+ <p class="product-price">Цена: 660₽</p>
+ </div>
+ </div>
+
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/64.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+     <br>
+ <a href="#">BIOTRIM MYSTIK ПАСТА</a>
+ </p>
+ <p class="product-desc">Универсальная очищающая паста</p>
+ <p class="product-price">Цена: 264₽</p>
+ </div>
+ </div>
+
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/65.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+     <br>
+ <a href="#">BIOTRIM MYSTIK ПОРОШОК</a>
+ </p>
+ <p class="product-desc">Универсальный чистящий порошок</p>
+ <p class="product-price">Цена: 264₽</p>
+ </div>
+ </div>
+
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/66.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+     <br>
+ <a href="#">САЛФЕТКИ BIOTRIM NEO#5</a>
+ </p>
+ <p class="product-desc">5 универсальных салфеток для...</p>
+ <p class="product-price">Цена: 240₽</p>
+ </div>
+ </div>
+
+
+ </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <div class="container-fluid bg-success form-wrap">
+      <h2 align="center"><font face="cursive" color="white">7. Генетические тесты</font></h2>
+
+</div>
+<br>
+<div align="center" >
+ <div class="row">
+ <div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/71.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+      <br>
+ <a href="#">IGEN BODY</a>
+ </p>
+ <p class="product-desc">Подробный анализ процессов метаболизма</p>
+ <p class="product-price">Цена: 7700₽</p>
+ </div>
+ </div>
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/72.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+      <br>
+ <a href="#">Комплект для сбора генетического материала IGEN BODY</a>
+ </p>
+ <p class="product-desc"></p>
+ <p class="product-price">Цена: 110₽</p>
+ </div>
+ </div>
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/73.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+      <br>
+ <a href="#"> IGEN HEALTH</a>
+ </p>
+ <p class="product-desc">анализ процессов в организме</p>
+ <p class="product-price">Цена: 7700₽</p>
+ </div>
+ </div>
+
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/74.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+     <br>
+ <a href="#">Комплект для сбора генетического материала IGEN HEALTH</a>
+ </p>
+ <p class="product-desc"></p>
+ <p class="product-price">Цена: 110₽</p>
+ </div>
+ </div>
+
+
+ </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <div class="container-fluid bg-success form-wrap">
+      <h2 align="center"><font face="cursive" color="white">8. Полотенца</font></h2>
+
+</div>
+<br>
+<div align="center" >
+ <div class="row">
+ <div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/81.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+      <br>
+ <a href="#">AQUAMAGIC PLUSH LAGUNA</a>
+ </p>
+ <p class="product-desc">для лица, 100 х 50 см</p>
+ <p class="product-price">Цена: 1386₽</p>
+ </div>
+ </div>
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/82.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+      <br>
+ <a href="#">AQUAMAGIC PLUSH LAGUNA</a>
+ </p>
+ <p class="product-desc">для рук, 50 х 30 см</p>
+ <p class="product-price">Цена: 539₽</p>
+ </div>
+ </div>
+
+ </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="container-fluid bg-success form-wrap">
+      <h2 align="center"><font face="cursive" color="white">9. Натуральные аромамасла</font></h2>
+
+</div>
+<br>
+<div align="center" >
+ <div class="row">
+ <div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/91.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+      <br>
+ <a href="#">SHARME ESSENTIAL БЕРГАМОТ</a>
+ </p>
+ <p class="product-desc">100% натуральное эфирное масло бергамота</p>
+ <p class="product-price">Цена: 316₽</p>
+ </div>
+ </div>
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/92.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+      <br>
+ <a href="#">SHARME ESSENTIAL ГЕРАНЬ</a>
+ </p>
+ <p class="product-desc">100% натуральное эфирное масло герани</p>
+ <p class="product-price">Цена: 519₽</p>
+ </div>
+ </div>
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/93.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+      <br>
+ <a href="#"> SHARME ESSENTIAL ИЛАНГ-ИЛАНГ</a>
+ </p>
+ <p class="product-desc">100% натуральное эфирное масло иланг...</p>
+ <p class="product-price">Цена: 440₽</p>
+ </div>
+ </div>
+
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/94.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+     <br>
+ <a href="#">SHARME ESSENTIAL КЕДР</a>
+ </p>
+ <p class="product-desc">100% натуральное эфирное масло кедра</p>
+ <p class="product-price">Цена: 202₽</p>
+ </div>
+ </div>
+
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/95.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+     <br>
+ <a href="#">SHARME ESSENTIAL ЛАВАНДА</a>
+ </p>
+ <p class="product-desc">100% натуральное эфирное масло лаванды</p>
+ <p class="product-price">Цена: 352₽</p>
+ </div>
+ </div>
+
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/96.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+     <br>
+ <a href="#">SHARME ESSENTIAL МЯТА ПЕРЕЧНАЯ</a>
+ </p>
+ <p class="product-desc">100% натуральное эфирное масло мяты...</p>
+ <p class="product-price">Цена: 264₽</p>
+ </div>
+ </div>
+
+
+ </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="container-fluid bg-success form-wrap">
+      <h2 align="center"><font face="cursive" color="white">10. Аксессуары</font></h2>
+
+</div>
+<br>
+<div align="center" >
+ <div class="row">
+ <div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/101.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+      <br>
+ <a href="#">ШЕЙКЕР БЕЛО-ЗЕЛЕНЫЙ</a>
+ </p>
+ <p class="product-desc">500 мл</p>
+ <p class="product-price">Цена: 290₽</p>
+ </div>
+ </div>
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/102.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+      <br>
+ <a href="#">ШЕЙКЕР ЗЕЛЕНЫЙ</a>
+ </p>
+ <p class="product-desc">500 мл</p>
+ <p class="product-price">Цена: 290₽</p>
+ </div>
+ </div>
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/103.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+      <br>
+ <a href="#"> КРАФТОВЫЙ ПАКЕТ БОЛЬШОЙ</a>
+ </p>
+ <p class="product-desc">Пакет из крафтовой бумаги</p>
+ <p class="product-price">Цена: 20₽</p>
+ </div>
+ </div>
+
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/104.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+     <br>
+ <a href="#">КРАФТОВЫЙ ПАКЕТ МАЛЫЙ</a>
+ </p>
+ <p class="product-desc">Пакет из крафтовой бумаги</p>
+ <p class="product-price">Цена: 15₽</p>
+ </div>
+ </div>
+
+ </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="container-fluid bg-success form-wrap">
+      <h2 align="center"><font face="cursive" color="white">11. Растворимые напитки</font></h2>
+
+</div>
+<br>
+<div align="center" >
+ <div class="row">
+ <div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/111.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+      <br>
+ <a href="#">HEALTHBERRY DETOX</a>
+ </p>
+ <p class="product-desc">Очищающий растворимый напиток</p>
+ <p class="product-price">Цена: 440₽</p>
+ </div>
+ </div>
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/112.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+      <br>
+ <a href="#">HEALTHBERRY UMMUNITY</a>
+ </p>
+ <p class="product-desc">Иммуностимулирующий растворимый напиток</p>
+ <p class="product-price">Цена: 440₽</p>
+ </div>
+ </div>
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/113.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+      <br>
+ <a href="#"> HEALTHBERRY TONUS</a>
+ </p>
+ <p class="product-desc">Тонизирующий растворимый напиток</p>
+ <p class="product-price">Цена: 440₽</p>
+ </div>
+ </div>
+
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/114.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+     <br>
+ <a href="#">HEALTHBERRY DREAM</a>
+ </p>
+ <p class="product-desc">Успокаивающий растворимый напиток</p>
+ <p class="product-price">Цена: 440₽</p>
+ </div>
+ </div>
+
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/115.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+     <br>
+ <a href="#">HEALTHBERRY SLIM</a>
+ </p>
+ <p class="product-desc">Растворимый напиток для контроля веса</p>
+ <p class="product-price">Цена: 440₽</p>
+ </div>
+ </div>
+
+
+
+<div class="col-sm-4">
+ <div class="product">
+ <div class="product-img">
+ <a href="#"><img src="{% static 'catalog/116.jpg' %}" alt=""></a>
+ </div>
+ <p class="product-title">
+     <br>
+ <a href="#">HEALTHBERRY MIX</a>
+ </p>
+ <p class="product-desc">Набор растворимых напитков</p>
+ <p class="product-price">Цена: 1320₽</p>
+ </div>
+ </div>
+
+
+ </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
